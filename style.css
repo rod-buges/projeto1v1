@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    zoom: 90%;
+    font-family: 'Poppins';
+  }
+  
+  .container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 170px;
+    margin-bottom: 0px;
+    margin-left: 115px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 10%;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px; /* Espaçamento de 10px entre os grupos de input */
+    
+  }
+  
+  input, select {
+    width: calc(100% - 22px); /* Leva em consideração a largura do ícone */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 15px;
+    background-color: #bfbfbf89;
+    font-family: 'Poppins';
+  }
+  
+  i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #555555;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #0f4192;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px;
+    font-family: 'Poppins';
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Adicionando estilos para dispositivos móveis */
+  @media only screen and (max-width: 600px) {
+    .container {
+      border-radius: 20px;
+      box-shadow: none;
+      padding: 10px;
+      background: #ffffffe1;
+    }
+  
+    .input-group {
+      margin-bottom: 10px;
+    }
+  
+    input, select {
+      width: calc(100% - 20px);
+    }
+  }

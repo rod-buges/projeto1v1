@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/++theme++padrao_govbr/favicons/favicon-32x32.png">
+  <title>Cadastro Bolsa Educação Jovem</title>
+</head>
+<body>
+
+  <div class="container">
+    <a href="https://www.gov.br/pt-br"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Gov.br_logo.svg/1200px-Gov.br_logo.svg.png" alt="Sua Logo" class="logo"></a>
+    <h2>Bolsa Educação Jovem</h2>
+    <form id="cadastroForm">
+      <div class="input-group">
+        <input type="text" id="nome" placeholder="Nome Completo" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="input-group">
+        <select id="sexo" required>
+          <option value="" disabled selected>Selecione o Sexo</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+        <i class="fas fa-venus-mars"></i>
+      </div>
+      <div class="input-group">
+        <input type="tel" id="telefone" placeholder="Telefone" required>
+        <i class="fas fa-phone"></i>
+      </div>
+      <div class="input-group">
+        <input type="text" id="cpf" placeholder="CPF" required>
+        <i class="fas fa-id-card"></i>
+      </div>
+      <div class="input-group">
+        <input type="date" id="dataNascimento" required>
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="input-group">
+        <input type="email" id="email" placeholder="E-mail" required>
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div class="input-group">
+        <input type="text" id="cep" placeholder="CEP" required>
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <button type="button" onclick="cadastrar()">Cadastrar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
